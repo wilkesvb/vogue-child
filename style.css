@@ -1,0 +1,589 @@
+/*
+Theme Name: vogue-child
+Theme URI: pilot.myvacayvalet.com
+Template: vogue
+Author: vincentwilkes.com
+Author URI: unoccupyme.com
+Description: Vogue Child is a trendy ecommerce theme
+Version: 1.0
+License: GNU General Public License v3.0
+License URI: license.txt
+Tags: black, white, two-columns, fixed-layout, threaded-comments, full-width-template, custom-menu
+*/
+
+/*--------------------------------------------------------------
+Woo Home Page Edits
+--------------------------------------------------------------*/
+
+.home .product.woocommerce.add_to_cart_inline {
+display: inline !important;
+border: none !important;
+}
+
+.home-feature {
+    width: 80% !important;
+}
+
+
+/*--------------------------------------------------------------
+Vogue - Slider Centered Styling
+--------------------------------------------------------------*/
+ .metaslider .caption-wrap {
+	font-size: 19px;
+	color: white !important;
+	top: 0 !important;
+    right: 0 !important;
+	box-sizing: border-box;
+	text-align: center;
+	margin: 0 !important;
+	padding: 0 0 0 50%;
+	background: none !important;
+	opacity: 1 !important;
+	text-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+}
+
+ .caption {
+	background-color: rgba(0, 0, 0, 0.6);
+	display: inline-block;
+	padding: 40px !important;
+}
+
+.caption-wrap .caption h3 {
+    color: white;
+    font-size: 48px;
+    letter-spacing: 1px;
+    margin: 0 0 8px;
+    padding: 0;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+    text-transform: uppercase;
+}
+.caption-wrap .caption h3 a {
+    color: #fff;
+}
+.caption-wrap .caption p {
+	max-width: 980px;
+	margin: 0 auto;
+}
+
+/*--------------------------------------------------------------
+Vogue - SO Widget Styling
+--------------------------------------------------------------*/
+
+.so-widget-sow-image h3 {
+    text-align: center;
+}
+
+@media screen and (min-width: 783px) {
+    .woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals {
+        width: 25% !important;
+    }
+}
+
+/*@media (max-width: 780px) {
+    #pg-4-1 .panel-grid-cell {
+        float: left !important;
+        width: 50% !important;
+    }
+}   */ 
+/*--------------------------------------------------------------
+Vogue - Search Bar Styling
+--------------------------------------------------------------*/
+
+input[type="search"],
+a.button {
+    margin-bottom: 5px !important;
+}
+
+
+/*--------------------------------------------------------------
+Vogue - Header Centered Styling
+--------------------------------------------------------------*/
+
+
+a.site-logo-img {
+    display: inline-block;
+    vertical-align: middle;
+}
+.site-title {
+    margin: 0;
+    padding: 0 0 12px;
+    font-size: 72px;
+    line-height: 1.2em;
+    font-weight: 300;
+}
+.site-title-img {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 12px;
+}
+.site-description {
+    margin: 0;
+    padding: 0 0 14px;
+    font-size: 13px;
+    line-height: 1.2em;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: inherit;
+}
+.site-description-img {
+    padding: 10px 0 5px;
+}
+
+#primary-menu,
+#main-menu > div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header-cart {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+}
+
+.header-cart {
+    color: #000;
+    font-weight: 400;
+}
+a.header-cart-contents {
+    color: inherit;
+    padding: 22px 20px 23px;
+}
+.header-cart-amount {
+    
+}
+.header-cart-checkout {
+    margin: 0 0 0 4px;
+}
+
+.menu-search {
+    display: inline-block;
+    margin: 0 0 0 5px;
+    vertical-align: middle;
+    font-size: 15px;
+}
+.search-btn {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.search-block {
+    position: absolute;
+    background-color: #FEFEFE;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 0;
+    border-radius: 0 0 3px 3px;
+    top: 50px;
+    right: 10px;
+    padding: 8px 9px;
+    z-index: 99;
+    display: none;
+    opacity: 0;
+}
+.search-block .search-field {
+    font-size: 16px;
+    margin: 0;
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    border-radius: 0;
+    background-color: #FFF;
+    width: 250px;
+    font-weight: 200;
+    outline: none;
+    color: inherit;
+    box-sizing: border-box;
+}
+.search-block .search-submit {
+    display: none;
+}
+    
+.show-site-search .search-block {
+    display: block;
+}
+
+/*--------------------------------------------------------------
+Vogue - product display excerpt edit
+--------------------------------------------------------------*/
+
+li.product p {
+    color: #000000;
+}
+
+.home .product ul {
+color: #000000;
+margin-left: auto;
+margin-right: auto;
+}
+.home .product ul li {
+text-align: left;
+list-style-type: disc;
+
+}
+
+
+/* -------- Header Compact -------- */
+
+.site-header-compact .site-title {
+    padding: 0 0 12px;
+}
+.site-header-compact .site-description {
+    padding: 0 0 12px;
+}
+
+.site-header-compact .search-block {
+    top: 35px;
+}
+
+.site-header-compact .header-cart {
+    position: relative;
+    top: -1px;
+}
+.site-header-compact a.header-cart-contents {
+    padding: 14px 20px 16px;
+}
+.site-header-compact .menu-search {
+    
+}
+
+#page {
+    position: relative;
+    right: 0;
+    
+    -webkit-transition: right 0.4s ease 0s;
+     -moz-transition: right 0.4s ease 0s;
+      -ms-transition: right 0.4s ease 0s;
+       -o-transition: right 0.4s ease 0s;
+          transition: right 0.4s ease 0s;
+}
+
+@media only screen and (max-width: 1180px) {
+	
+	.caption h3 {
+		font-size: 42px !important;
+	}
+	
+}
+
+@media only screen and (max-width: 1020px) {
+	
+	.caption-wrap {
+	    font-size: 16px !important;
+	}
+	.caption h3 {
+    	font-size: 38px !important;
+	}
+	
+}
+
+@media screen and (max-width: 980px) {
+	.caption-wrap {
+		margin: -58px 0 0 !important;
+	}
+	.caption {
+		padding: 25px !important;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.flexslider img {
+/*		max-width: 100% !important;
+*//*		height: 280px !important;
+*/	}
+	.flexslider,
+    .flexslider ul, 
+    .flexslider ul li,
+    .flexslider img {
+		height: auto !important;
+        max-width: 100% !important;
+		overflow: hidden !important;
+	}
+
+	.caption-wrap {
+	    margin: -50px 0 0 !important;
+	    padding: 0 50px !important;
+        font-size: 12px !important;
+	}
+    .caption h3 {
+        font-size: 28px !important;
+    }
+    .caption {
+        padding: 15px !important;
+    }
+
+}
+
+
+
+@media screen and (max-width: 980px) {
+    
+    .site-title {
+        font-size: 54px !important;
+    }
+    
+    .header-menu-button {
+        display: block !important;
+        padding: 18px 0 20px;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    .header-menu-button i {
+        font-size: 14px;
+        vertical-align: middle;
+        position: relative;
+        top: 1px;
+    }
+    .header-menu-button span {
+        vertical-align: middle;
+        margin: 0 0 0 6px;
+    }
+    .site-header-compact .header-cart,
+    .header-cart {
+        position: absolute;
+        top: 15px;
+    }
+    a.header-cart-contents {
+        text-align: left;
+        padding: 7px 0;
+    }
+    
+    #main-menu > div,
+    .main-navigation ul {
+        display: block;
+    }
+    
+    .main-navigation #main-menu {
+        box-shadow: 1px 0 0 0 rgba(0, 0, 0, 0.08) inset;
+        position: fixed;
+        top: 0;
+        right: -280px;
+        width: 280px;
+        max-width: 100%;
+        -ms-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 58px 22px 30px 22px;
+        z-index: 99999;
+        height: 100%;
+        overflow: auto;
+        -webkit-transition: right 0.4s ease 0s;
+        -moz-transition: right 0.4s ease 0s;
+        -ms-transition: right 0.4s ease 0s;
+        -o-transition: right 0.4s ease 0s;
+        transition: right 0.4s ease 0s;
+    }
+    .main-navigation li {
+        display: block;
+        float: none;
+    }
+    .main-navigation li a {
+        display: block;
+        float: none;
+        padding: 7px 0;
+        text-align: left;
+    }
+    
+    .main-navigation ul ul {
+        position: relative !important;
+        top: 0 !important;
+        left: 0 !important;
+        float: none !important;
+        padding: 0;
+        margin: 0;
+        display: none;
+    }
+    .main-navigation ul ul li:last-child a,
+    .main-navigation ul ul li a {
+        width: auto;
+    }
+    .main-navigation ul ul li a {
+        background: none !important;
+    }
+    
+    #primary-menu {
+        display: block;
+    }
+    .main-menu-close {
+        display: block;
+        border-radius: 4px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 30px;
+        text-align: center;
+        padding: 0 8px 0 12px;
+        height: 40px;
+        line-height: 38px;
+        cursor: pointer;
+    }
+    .main-menu-close .fa-angle-left {
+        position: relative;
+        left: -4px;
+    }
+    
+    body.admin-bar .main-navigation #main-menu {
+        padding: 88px 22px 30px 22px;
+    }
+    body.admin-bar .header-cart {
+        top: 45px;
+    }
+    body.admin-bar .main-menu-close {
+        top: 40px;
+    }
+    
+}
+
+@media only screen and (max-width: 782px) {
+    	.caption-wrap {
+	    top: 50%;
+	    font-size: 13px !important;
+	    margin: -40px 0 0 !important;
+	    padding: 0 40px !important;
+	}
+	.caption {
+		padding: 20px !important;
+	}
+	.caption h3 {
+    	font-size: 24px !important;
+	}
+    .site-header-topbar {
+        padding: 5px 0 0;
+    }
+    .site-topbar-left,
+    .site-topbar-right {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .site-topbar-left {
+        padding: 2px 0 2px;
+    }
+    .site-topbar-left .menu {
+        display: inline-block;
+    }
+    .site-topbar-left ul {
+        padding: 2px 0 2px;
+    }
+    .site-topbar-right {
+        padding: 0 0 8px !important;
+    }
+    
+    .site-header .site-container {
+        text-align: center;
+    }
+    
+    .search-block {
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+    .search-block .search-field {
+        margin: 0;
+        width: 100%;
+        font-size: 17px;
+        padding: 4px 6px;
+    }
+    
+    .site-branding {
+        width: 100%;
+        float: none;
+        text-align: center;
+        padding: 4px 0;
+    }
+    .site-branding a {
+        display: inline-block;
+    }
+    .site-header-compact .site-branding {
+        padding: 0;
+    }
+    .site-title {
+        font-size: 48px !important;
+        line-height: 50px;
+        padding: 0 0 8px;
+    }
+    .site-description {
+        font-size: 12px;
+        padding: 0 0 8px;
+    }
+    .site-description-img {
+        padding: 5px 0 2px;
+    }
+    .site-header-compact .site-title {
+        padding: 0 0 8px;
+    }
+    .site-header-compact .site-description {
+        padding: 0 0 8px;
+    }
+    
+    .header-cart {
+        float: none;
+        text-align: center;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 0 2px;
+    }
+    a.header-cart-contents {
+    }
+    .main-navigation {
+        width: 100%;
+        float: none;
+        text-align: center;
+        padding: 5px 0;
+    }
+    .main-navigation li {
+        text-align: left;
+    }
+    .header-menu-button {
+        margin: 0;
+        padding: 6px 0 12px;
+        display: block;
+    }
+    
+    .menu-search {
+        padding: 0;
+        float: none;
+        display: inline-block;
+        vertical-align: middle;
+        box-shadow: none;
+        margin: 0 15px 0 0;
+    }
+    
+    body.admin-bar .main-navigation #main-menu {
+        padding: 98px 22px 30px 22px;
+    }
+    body.admin-bar .header-cart {
+        top: 55px;
+    }
+    body.admin-bar .main-menu-close {
+        top: 50px;
+    }
+    
+}
+
+body.show-main-menu #main-menu {
+    right: 0px;
+}
+body.show-main-menu #page {
+    right: 280px;
+}
+
+/*--------------------------------------------------------------
+Vogue - SO Editor Fixes for woo product display, etc. 
+--------------------------------------------------------------*/
+
+
+.so-panel .woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+/*	width: 100%;*/
+}
+
+/***** Messages Woocommerce *****/
+.woocommerce-LoopProduct-link .theme_error_messages{
+    display: none;
+}
+.entry-summary .theme_error_messages{
+    background-color: red;
+    color: #FFFFFF;
+    padding: 10px;
+    font-size: 15px;
+    font-style: italic;
+    line-height: 15px;
+}
