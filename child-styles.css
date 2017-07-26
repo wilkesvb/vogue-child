@@ -1,0 +1,188 @@
+/*--------------------------------------------------------------
+Woo Home Page Edits
+--------------------------------------------------------------*/
+
+.home .woocommerce-error {display: none !important;}
+
+.home .product.woocommerce.add_to_cart_inline {
+display: inline !important;
+border: none !important;
+}
+
+.home-feature {
+    width: 80% !important;
+}
+
+.block-image {
+    width: 200px;
+    height: auto;
+}
+div.front-page-hero {
+    padding: 70px;
+/*    background: url('/wp-content/themes/vogue-child/images/how-it-works-banner.jpg') center center;
+*/}
+
+
+div.front-page-hero h1 {
+    margin: 0px;
+    font-family: 'Helvetica Neue', sans-serif; 
+    font-size: 48px;
+    text-align: center;
+}
+
+form.form-horizontal {
+    width: 500px; 
+    margin: 0 auto 50px;
+    text-align: center;
+    background: #ECECEC;
+}
+
+.form-group input {
+    width: 100%;
+    margin: 5px 0px;
+}
+
+.form-button button {
+    width: 100%;
+    margin: 5px 0px;
+}
+
+.home input {
+    text-align: center;
+}
+
+.home footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+@media screen and (max-width: 980px) {
+
+    div.front-page-hero {
+        padding: 20px;
+    }
+    div.front-page-hero h1 {
+        font-size: 24px !important;
+    }
+    .block-image {
+        width: 100% !important;
+        margin: 0px !important;
+    }
+    #pgc-4-2-0,
+    #pgc-4-2-1  {
+        float: left !important;
+        /*width: 50% !important;*/
+    }
+    .panel-grid-cell p {
+        /*text-align: center !important;*/
+    }
+    .button {
+        padding: 9px 14px !important;
+    }
+
+    div.front-page-hero h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+    form.form-horizontal {
+        width: 100%; 
+    }
+    
+    .site-branding a img {
+        margin: auto;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .front-page-hero h1 {
+        font-size: 36px !important;
+    }
+    .home footer {
+        position: relative;
+    }
+}
+
+
+/*--------------------------------------------------------------
+Vogue - SO Editor Fixes for woo product display, etc. 
+--------------------------------------------------------------*/
+
+/***** Messages Woocommerce *****/
+.woocommerce-LoopProduct-link .theme_error_messages{
+    display: none;
+}
+.entry-summary .theme_error_messages{
+    background-color: red;
+    color: #FFFFFF;
+    padding: 10px;
+    font-size: 15px;
+    font-style: italic;
+    line-height: 15px;
+}
+span.messageText{
+    display: none;
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px;
+    background: #2e8dc7;
+    color: #fff;
+    opacity: 0;
+    -webkit-transition: opacity 5s ease-out; /* Safari */
+    transition: opacity 5s ease-out;
+
+}
+
+span.messageText.active {
+    opacity: 1;
+    display: block;
+    transition: opacity 5s ease-out;
+}
+/*--------------------------------------------------------------
+Vogue - SO Widget Styling
+--------------------------------------------------------------*/
+
+.so-widget-sow-image h3 {
+    text-align: center;
+}
+
+@media screen and (min-width: 783px) {
+    .woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals {
+        width: 25% !important;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    #pg-4-3 .panel-grid-cell img {
+    max-width: 100px !important;
+    margin-bottom: 100px !important;
+    }
+}  
+/*--------------------------------------------------------------
+Vogue - product display excerpt edit
+--------------------------------------------------------------*/
+
+li.product p {
+    color: #000000;
+}
+
+.home .product ul {
+color: #000000;
+margin-left: auto;
+margin-right: auto;
+}
+.home .product ul li {
+text-align: left;
+list-style-type: disc;
+
+}
+
+/*--------------------------------------------------------------
+Blog Post Edits 
+--------------------------------------------------------------*/
+.single .entry-meta {
+    display: none !important;
+}

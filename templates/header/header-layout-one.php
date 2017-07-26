@@ -84,7 +84,7 @@ global $woocommerce; ?>
 		                <span class="header-cart-checkout <?php echo ( $woocommerce->cart->cart_contents_count > 0 ) ? sanitize_html_class( 'cart-has-items' ) : ''; ?>">
 		                    <i class="fa fa-shopping-cart"></i>
 		                </span>
-		            </a>
+		            </a>test
 					
 				</div>
 			<?php endif; ?>

@@ -4,7 +4,7 @@
         
         <?php if ( is_home() ) : ?>
             
-            <?php echo ( get_theme_mod( 'vogue-blog-title' ) ) ? '<h1 class="entry-title">' . esc_html( get_theme_mod( 'vogue-blog-title', false ) ) . '</h1>' : '<h1 class="entry-title">' . __( 'Blog', 'vogue' ) . '</h1>'; ?>
+             <?php echo ( get_theme_mod( 'vogue-blog-title' ) ) ? '<h1 class="entry-title">' . esc_html( get_theme_mod( 'vogue-blog-title', false ) ) . '</h1>' : '<h1 class="entry-title">' . __( 'Virginia Vacation Rentals', 'vogue' ) . '</h1>'; ?>
             
         <?php else: ?>
             

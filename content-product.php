@@ -26,8 +26,18 @@ global $product;
 if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
+
+if ( ! $product->is_in_stock() ) {
+
+	$value = get_post_meta( $product->get_id(), 'mvv_outofstock_value', true );
+
+	if ( $value === 'hide_it'){
+		return;
+	}
+}
+
 ?>
-<li <?php post_class(); ?>>
+<li <?php post_class();   ?>>
 	<?php
 	/**
 	 * woocommerce_before_shop_loop_item hook.

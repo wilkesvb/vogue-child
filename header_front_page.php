@@ -16,7 +16,6 @@ global $woocommerce;
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 <?php wp_head(); ?>
-
 </head>
 
 <body <?php body_class(); ?>>
@@ -25,7 +24,7 @@ global $woocommerce;
 	
 	<?php if ( get_theme_mod( 'vogue-header-layout' ) == 'vogue-header-layout-three' ) : ?>
 	
-		<?php get_template_part( '/templates/header/header-layout-three' ); ?>
+		<?php get_template_part( '/templates/header/header-layout-front-page' ); ?>
 		
 	<?php else : ?>
 	
@@ -33,10 +32,5 @@ global $woocommerce;
 		
 	<?php endif; ?>
 	
-	<?php if ( is_front_page() ) : ?>
-		
-		<?php get_template_part( '/templates/slider/homepage-slider' ); ?>
-		
-	<?php endif; ?>
 
 	<div class="site-container <?php echo ( ! is_active_sidebar( 'sidebar-1' ) ) ? sanitize_html_class( 'content-no-sidebar' ) : sanitize_html_class( 'content-has-sidebar' ); ?> <?php echo ( get_theme_mod( 'vogue-titlebar-centered' ) ) ? sanitize_html_class( 'title-bar-centered' ) : ''; ?>">

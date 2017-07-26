@@ -8,54 +8,7 @@ global $woocommerce; ?>
 	
 	<?php do_action ( 'vogue_before_topbar' ); ?>
 	
-	<?php if ( ! get_theme_mod( 'vogue-header-remove-topbar' ) ) : ?>
-		<div class="site-header-topbar">
-			<div class="site-container">
-				<div class="site-topbar-left">
-					<?php do_action ( 'vogue_topbar_left_left' ); ?>
-					
-					<?php if ( ! get_theme_mod( 'vogue-header-hide-social' ) ) : ?>
-						
-						<?php get_template_part( '/templates/social-links' ); ?>
-					
-					<?php endif; ?>
-					
-					<?php wp_nav_menu( array( 'theme_location' => 'top-bar-menu', 'fallback_cb' => false ) ); ?>
-					
-					<?php if ( ! get_theme_mod( 'vogue-header-hide-add' ) ) : ?>
-		            	<span class="site-topbar-left-ad"><i class="fa fa-map-marker"></i> <?php echo wp_kses_post( get_theme_mod( 'vogue-website-site-add', 'Cape Town, South Africa' ) ) ?></span>
-					<?php endif; ?>
-					
-					<?php do_action ( 'vogue_topbar_left_right' ); ?>
-				</div>
-				
-				<div class="site-topbar-right">
-					<?php do_action ( 'vogue_topbar_right_left' ); ?>
-					
-					<?php if ( ! get_theme_mod( 'vogue-header-hide-no' ) ) : ?>
-		            	<span class="site-topbar-right-no"><i class="fa fa-phone"></i> <?php echo wp_kses_post( get_theme_mod( 'vogue-website-head-no', 'Call Us: +2782 444 YEAH' ) ) ?></span>
-					<?php endif; ?>
-					
-					<?php if ( !get_theme_mod( 'vogue-header-search', false ) ) : ?>
-						<div class="menu-search">
-					    	<i class="fa fa-search search-btn"></i>
-					    </div>
-					<?php endif; ?>
-					
-					<?php do_action ( 'vogue_topbar_right_right' ); ?>
-				</div>
-				
-				<?php if ( !get_theme_mod( 'vogue-header-search', false ) ) : ?>
-				    <div class="search-block">
-				        <?php get_search_form(); ?>
-				    </div>
-				<?php endif; ?>
-				
-			</div>
-			
-			<div class="clearboth"></div>
-		</div>
-	<?php endif; ?>
+
 	
 	<div class="site-container">
 	
@@ -105,4 +58,5 @@ global $woocommerce; ?>
 		
 		<div class="clearboth"></div>
 	</div>
+	<?php zip_form(); ?>
 </header><!-- #masthead -->

@@ -3,7 +3,7 @@ Theme Name: vogue-child
 Theme URI: pilot.myvacayvalet.com
 Template: vogue
 Author: vincentwilkes.com
-Author URI: unoccupyme.com
+Author URI: vincentwilkes.com
 Description: Vogue Child is a trendy ecommerce theme
 Version: 1.0
 License: GNU General Public License v3.0
@@ -11,41 +11,113 @@ License URI: license.txt
 Tags: black, white, two-columns, fixed-layout, threaded-comments, full-width-template, custom-menu
 */
 
-/*--------------------------------------------------------------
-Woo Home Page Edits
---------------------------------------------------------------*/
-
-.home .product.woocommerce.add_to_cart_inline {
-display: inline !important;
-border: none !important;
+.xdebug-var-dump {
+    display:none;
+}
+.logged-in .xdebug-var-dump {
+    display:block;
 }
 
-.home-feature {
-    width: 80% !important;
+.local-flag {
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+.local-flag::before {
+    border: solid transparent;
+    border-width: 0 0 72px 72px;
+    content: " ";
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    z-index: 10;
+}
+.local-flag::before {
+    border-bottom-color: #58b74d;
 }
 
+.local-flag::after{
+    color: #fff;
+    font-weight: 700;
+    position: absolute;
+    right: 0.50rem;
+    bottom: 0.75rem;
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    z-index: 11;
+}
+.local-flag::after{
+    content: "LOCAL";
+}
+
+.woocommerce ul.products li.product a img {
+    margin-bottom:0;
+}
+
+.gray-out {
+    filter: grayscale(1);
+    opacity: 0.6;
+}
+.outofstock-text {
+    width: 100%;
+    font-size: 16px;
+    margin: 0 auto;
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.12);
+    text-align: center;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    pointer-events: none;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: 50%;
+    z-index:1;
+}
+.outofstock-inner {
+    color: #ff6161;
+    font-size: 16px;
+    text-align:center;
+}
+.mvv-thumbnail-wrap {
+    position:relative;
+}
+.outofstock .woocommerce-main-image {
+    display:block;
+    position:relative;
+}
+
+.home .header-cart {
+    display: none !important;
+}
 
 /*--------------------------------------------------------------
 Vogue - Slider Centered Styling
 --------------------------------------------------------------*/
  .metaslider .caption-wrap {
-	font-size: 19px;
-	color: white !important;
-	top: 0 !important;
+    font-size: 19px;
+    color: white !important;
+    top: 0 !important;
     right: 0 !important;
-	box-sizing: border-box;
-	text-align: center;
-	margin: 0 !important;
-	padding: 0 0 0 50%;
-	background: none !important;
-	opacity: 1 !important;
-	text-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 !important;
+    padding: 0 0 0 50%;
+    background: none !important;
+    opacity: 1 !important;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
 }
 
  .caption {
-	background-color: rgba(0, 0, 0, 0.6);
-	display: inline-block;
-	padding: 40px !important;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: inline-block;
+    padding: 40px !important;
 }
 
 .caption-wrap .caption h3 {
@@ -61,162 +133,8 @@ Vogue - Slider Centered Styling
     color: #fff;
 }
 .caption-wrap .caption p {
-	max-width: 980px;
-	margin: 0 auto;
-}
-
-/*--------------------------------------------------------------
-Vogue - SO Widget Styling
---------------------------------------------------------------*/
-
-.so-widget-sow-image h3 {
-    text-align: center;
-}
-
-@media screen and (min-width: 783px) {
-    .woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals {
-        width: 25% !important;
-    }
-}
-
-/*@media (max-width: 780px) {
-    #pg-4-1 .panel-grid-cell {
-        float: left !important;
-        width: 50% !important;
-    }
-}   */ 
-/*--------------------------------------------------------------
-Vogue - Search Bar Styling
---------------------------------------------------------------*/
-
-input[type="search"],
-a.button {
-    margin-bottom: 5px !important;
-}
-
-
-/*--------------------------------------------------------------
-Vogue - Header Centered Styling
---------------------------------------------------------------*/
-
-
-a.site-logo-img {
-    display: inline-block;
-    vertical-align: middle;
-}
-.site-title {
-    margin: 0;
-    padding: 0 0 12px;
-    font-size: 72px;
-    line-height: 1.2em;
-    font-weight: 300;
-}
-.site-title-img {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0 0 0 12px;
-}
-.site-description {
-    margin: 0;
-    padding: 0 0 14px;
-    font-size: 13px;
-    line-height: 1.2em;
-    font-weight: 300;
-    text-transform: uppercase;
-    color: inherit;
-}
-.site-description-img {
-    padding: 10px 0 5px;
-}
-
-#primary-menu,
-#main-menu > div {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.header-cart {
-    display: inline-block;
-    vertical-align: middle;
-    padding: 0;
-}
-
-.header-cart {
-    color: #000;
-    font-weight: 400;
-}
-a.header-cart-contents {
-    color: inherit;
-    padding: 22px 20px 23px;
-}
-.header-cart-amount {
-    
-}
-.header-cart-checkout {
-    margin: 0 0 0 4px;
-}
-
-.menu-search {
-    display: inline-block;
-    margin: 0 0 0 5px;
-    vertical-align: middle;
-    font-size: 15px;
-}
-.search-btn {
-    padding: 5px;
-    cursor: pointer;
-}
-
-.search-block {
-    position: absolute;
-    background-color: #FEFEFE;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-top: 0;
-    border-radius: 0 0 3px 3px;
-    top: 50px;
-    right: 10px;
-    padding: 8px 9px;
-    z-index: 99;
-    display: none;
-    opacity: 0;
-}
-.search-block .search-field {
-    font-size: 16px;
-    margin: 0;
-    border: 1px solid rgba(0, 0, 0, 0.18);
-    border-radius: 0;
-    background-color: #FFF;
-    width: 250px;
-    font-weight: 200;
-    outline: none;
-    color: inherit;
-    box-sizing: border-box;
-}
-.search-block .search-submit {
-    display: none;
-}
-    
-.show-site-search .search-block {
-    display: block;
-}
-
-/*--------------------------------------------------------------
-Vogue - product display excerpt edit
---------------------------------------------------------------*/
-
-li.product p {
-    color: #000000;
-}
-
-.home .product ul {
-color: #000000;
-margin-left: auto;
-margin-right: auto;
-}
-.home .product ul li {
-text-align: left;
-list-style-type: disc;
-
+    max-width: 980px;
+    margin: 0 auto;
 }
 
 
@@ -256,52 +174,52 @@ list-style-type: disc;
 }
 
 @media only screen and (max-width: 1180px) {
-	
-	.caption h3 {
-		font-size: 42px !important;
-	}
-	
+    
+    .caption h3 {
+        font-size: 42px !important;
+    }
+    
 }
 
 @media only screen and (max-width: 1020px) {
-	
-	.caption-wrap {
-	    font-size: 16px !important;
-	}
-	.caption h3 {
-    	font-size: 38px !important;
-	}
-	
+    
+    .caption-wrap {
+        font-size: 16px !important;
+    }
+    .caption h3 {
+        font-size: 38px !important;
+    }
+    
 }
 
 @media screen and (max-width: 980px) {
-	.caption-wrap {
-		margin: -58px 0 0 !important;
-	}
-	.caption {
-		padding: 25px !important;
-	}
+    .caption-wrap {
+        margin: -58px 0 0 !important;
+    }
+    .caption {
+        padding: 25px !important;
+    }
 }
 
 @media only screen and (max-width: 700px) {
-	.flexslider img {
-/*		max-width: 100% !important;
-*//*		height: 280px !important;
-*/	}
-	.flexslider,
+    .flexslider img {
+      max-width: 100% !important;
+      height: 280px !important;
+  }
+    .flexslider,
     .flexslider ul, 
     .flexslider ul li,
     .flexslider img {
-		height: auto !important;
+        height: auto !important;
         max-width: 100% !important;
-		overflow: hidden !important;
-	}
+        overflow: hidden !important;
+    }
 
-	.caption-wrap {
-	    margin: -50px 0 0 !important;
-	    padding: 0 50px !important;
+    .caption-wrap {
+        margin: -50px 0 0 !important;
+        padding: 0 50px !important;
         font-size: 12px !important;
-	}
+    }
     .caption h3 {
         font-size: 28px !important;
     }
@@ -313,7 +231,7 @@ list-style-type: disc;
 
 
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1075px) {
     
     .site-title {
         font-size: 54px !important;
@@ -433,18 +351,18 @@ list-style-type: disc;
 }
 
 @media only screen and (max-width: 782px) {
-    	.caption-wrap {
-	    top: 50%;
-	    font-size: 13px !important;
-	    margin: -40px 0 0 !important;
-	    padding: 0 40px !important;
-	}
-	.caption {
-		padding: 20px !important;
-	}
-	.caption h3 {
-    	font-size: 24px !important;
-	}
+        .caption-wrap {
+        top: 50%;
+        font-size: 13px !important;
+        margin: -40px 0 0 !important;
+        padding: 0 40px !important;
+    }
+    .caption {
+        padding: 20px !important;
+    }
+    .caption h3 {
+        font-size: 24px !important;
+    }
     .site-header-topbar {
         padding: 5px 0 0;
     }
@@ -566,24 +484,3 @@ body.show-main-menu #page {
     right: 280px;
 }
 
-/*--------------------------------------------------------------
-Vogue - SO Editor Fixes for woo product display, etc. 
---------------------------------------------------------------*/
-
-
-.so-panel .woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
-/*	width: 100%;*/
-}
-
-/***** Messages Woocommerce *****/
-.woocommerce-LoopProduct-link .theme_error_messages{
-    display: none;
-}
-.entry-summary .theme_error_messages{
-    background-color: red;
-    color: #FFFFFF;
-    padding: 10px;
-    font-size: 15px;
-    font-style: italic;
-    line-height: 15px;
-}

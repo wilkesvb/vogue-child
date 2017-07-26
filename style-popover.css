@@ -1,0 +1,53 @@
+body, input, .widget-area .widget a {
+    color: #3C3C3C;
+    font-family: 'Open Sans', sans-serif;
+	text-align: center;
+}
+
+div.popover {
+	width: 100%;
+	max-width: 640px;
+	margin: 0 auto;
+	padding: 20px 10px;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+body, button, input, select, textarea {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+
+label {
+	font-size: 14px;
+}
+
+input[type="submit"], button, .woocommerce input.button.alt, .woocommerce-page #content input.button.alt, .woocommerce .cart-collaterals .shipping_calculator .button, .woocommerce-page .cart-collaterals .shipping_calculator .button, .woocommerce a.button:hover, .woocommerce-page a.button:hover, .woocommerce input.button:hover, .woocommerce-page #content input.button:hover, .woocommerce-page input.button:hover, .woocommerce ul.products li.product a.add_to_cart_button:hover, .woocommerce-page ul.products li.product a.add_to_cart_button:hover, .woocommerce button.button.alt:hover, .woocommerce-page button.button.alt:hover, .woocommerce #review_form #respond .form-submit input:hover, .woocommerce-page #review_form #respond .form-submit input:hover, .woocommerce-cart .wc-proceed-to-checkout a.checkout-button, .woocommerce button.button.alt.disabled:hover, .wpcf7-submit:hover {
+    background: inherit;
+    background-color: #58b74d;
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    border-radius: 3px;
+    color: #FFF;
+    cursor: pointer;
+    -webkit-appearance: button;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    padding: 10px 25px;
+
+}
+
+input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"] {
+    padding: 3px;
+}
+
+ul {
+	padding-left: 0px;
+}
+
+ul li {list-style-type: none;}
